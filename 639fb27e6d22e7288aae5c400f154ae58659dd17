@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5ad0253b_19422f3f",
+        "filename": "ansible-role-openstack-operations.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-02-01T06:33:08Z",
+      "side": 1,
+      "message": "good to adjust like https://review.rdoproject.org/r/#/c/18612/2/openstack-tripleo-validations.spec@37",
+      "range": {
+        "startLine": 40,
+        "startChar": 0,
+        "endLine": 40,
+        "endChar": 38
+      },
+      "revId": "639fb27e6d22e7288aae5c400f154ae58659dd17",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
