@@ -39,6 +39,7 @@ Requires:       ansible
 BuildRequires:  python%{pyver}-d2to1
 Requires:       python3dist(ansible) >= 2
 %endif
+Requires:       ansible-pacemaker
 
 %description
 
