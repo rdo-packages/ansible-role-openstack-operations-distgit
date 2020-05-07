@@ -1,18 +1,21 @@
-
 %global srcname ansible_role_openstack_operations
 %global rolename ansible-role-openstack-operations
 
-%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+%{!?upstream_version: %global upstream_version %{commit}}
+%global commit 274739ee5b0ff702f67af59ec2ff42b78c495bce
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+# DO NOT REMOVE ALPHATAG
+%global alphatag .%{shortcommit}git
 
 Name:           %{rolename}
-Version:        XXX
-Release:        XXX
+Version:        0.0.1
+Release:        0.1%{?alphatag}%{?dist}
 Summary:        Ansible role to perform OpenStack Day 2 Operations
 
 Group:          System Environment/Base
 License:        ASL 2.0
-URL:            https://git.openstack.org/cgit/openstack/ansible-role-openstack-operations
-Source0:        https://tarballs.openstack.org/%{rolename}/%{rolename}-%{upstream_version}.tar.gz
+URL:            https://opendev.org/openstack/ansible-role-openstack-operations
+Source0:        https://github.com/openstack/%{rolename}/archive/%{commit}.tar.gz#/%{rolename}-%{shortcommit}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  git
@@ -49,5 +52,7 @@ export SKIP_PIP_INSTALL=1
 
 
 %changelog
+* Thu May 07 2020 RDO <dev@lists.rdoproject.org> 0.0.1-0.1.274739egit
+- Update to pre-release 0.0.1 (274739ee5b0ff702f67af59ec2ff42b78c495bce)
 
 
