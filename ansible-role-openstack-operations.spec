@@ -33,7 +33,7 @@ BuildRequires:  python3-devel
 BuildRequires:  python3-setuptools
 BuildRequires:  python3-pbr
 
-Requires:       python3dist(ansible) >= 2
+Requires: (python3dist(ansible) >= 2 or ansible-core >= 2.11)
 Requires:       ansible-pacemaker
 
 %description
